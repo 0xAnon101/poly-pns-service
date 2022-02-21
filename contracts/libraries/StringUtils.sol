@@ -2,7 +2,7 @@
 pragma solidity >=0.8.4;
 
 library StringUtils {
-    function strlen(string calldata s) internal pure returns (uint256) {
+    function strlen(string memory s) internal pure returns (uint256) {
         uint256 len;
         uint256 i = 0;
         uint256 bytelength = bytes(s).length;
